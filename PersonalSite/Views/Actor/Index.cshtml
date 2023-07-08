@@ -10,8 +10,17 @@
     <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
     <title>Miguel Soriano - Actor</title>
-    <meta content="" name="description">
-    <meta content="" name="keywords">
+    <meta name="title" content="Miguel Soriano - Actor">
+    <meta name="author" content="Miguel Soriano">
+    <meta name="description" content="Miguel Soriano - Actor de Teatro, Televisión y Cine">
+    <meta name="keywords" content="Actor, Teatro, Obras, Locuciones, Peliculas, Cortos, Televisión, Cine, Lima, Perú">
+
+    <meta property="og:site_name" content="Tu Escena Online" />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://www.miguelsoriano.com/actor" />
+    <meta property="og:title" content="Miguel Soriano - Actor" />
+    <meta property="og:description" content="Miguel Soriano - Actor de Teatro, Televisión y Cine" />
+    <meta property="og:image" content="https://www.miguelsoriano.com/assets/img/actor-profile-img.jpg" />
 
     <!-- Favicons -->
     <link href="assets/img/favicon.png" rel="icon">
@@ -30,14 +39,6 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet">
-
-    <!-- =======================================================
-    * Template Name: iPortfolio
-    * Updated: May 30 2023 with Bootstrap v5.3.0
-    * Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-    * Author: BootstrapMade.com
-    * License: https://bootstrapmade.com/license/
-    ======================================================== -->
 </head>
 
 <body>
@@ -60,12 +61,16 @@
 
             <nav id="navbar" class="nav-menu navbar">
                 <ul>
-                    <li><a href="#actor" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
-                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
-                    <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
-                    <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-                    <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
-                    <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+                    <li><a href="#actor" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Inicio</span></a></li>
+                    <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>Acerca</span></a></li>
+                    <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resumen</span></a></li>
+                    <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bxs-image"></i> <span>Fotos</span></a></li>
+                    <li><a href="#posters" class="nav-link scrollto"><i class="bx bxs-photo-album"></i> <span>Posters</span></a></li>
+                    <li><a href="#videos" class="nav-link scrollto"><i class="bx bxs-video"></i> <span>Videos</span></a></li>
+                    <li><a href="#locuciones" class="nav-link scrollto"><i class="bx bxl-audible"></i> <span>Locuciones</span></a></li>
+                    <li><a href="/assets/pdf/CV_MiguelSoriano.pdf" download><i class="bx bx-download"></i> <span>Descargar</span></a></li>
+                    @*<li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Servicios</span></a></li>*@
+                    @*<li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contacto</span></a></li>*@
                 </ul>
             </nav><!-- .nav-menu -->
         </div>
@@ -76,7 +81,7 @@
     <section id="actor" class="d-flex flex-column justify-content-center align-items-center">
         <div class="actor-container" data-aos="fade-in">
             <h1>Miguel Soriano</h1>
-            <p><span class="typed" data-typed-items="Actor de Teatro,Cine y Televisión"></span></p>
+            <p>Actor de <span class="typed" data-typed-items="Teatro,Televisión y Cine"></span></p>
         </div>
     </section>
     <!-- End Actor -->
@@ -89,11 +94,11 @@
         <!-- End About Section -->
 
         <!-- ======= Facts Section ======= -->
-        <partial name="_Facts" />
+        @*<partial name="_Facts" />*@
         <!-- End Facts Section -->
 
         <!-- ======= Skills Section ======= -->
-        <partial name="_Skills" />
+        @*<partial name="_Skills" />*@
         <!-- End Skills Section -->
 
         <!-- ======= Resume Section ======= -->
@@ -104,16 +109,28 @@
         <partial name="_Portfolio" />
         <!-- End Portfolio Section -->
 
+        <!-- ======= Portfolio Section ======= -->
+        <partial name="_Posters" />
+        <!-- End Portfolio Section -->
+
+        <!-- ======= Videos Section ======= -->
+        <partial name="_Videos" />
+        <!-- End Videos Section -->
+
+        <!-- ======= Videos Section ======= -->
+        <partial name="_Locuciones" />
+        <!-- End Videos Section -->
+
         <!-- ======= Services Section ======= -->
-        <partial name="_Services" />
+        @*<partial name="_Services" />*@
         <!-- End Services Section -->
 
         <!-- ======= Testimonials Section ======= -->
-        <partial name="_Testimonials" />
+        @*<partial name="_Testimonials" />*@
         <!-- End Testimonials Section -->
 
         <!-- ======= Contact Section ======= -->
-        <partial name="_Contact" />
+        @*<partial name="_Contact" />*@
         <!-- End Contact Section -->
 
     </main>
@@ -123,14 +140,7 @@
     <footer id="footer">
         <div class="container">
             <div class="copyright">
-                &copy; Copyright <strong><span>iPortfolio</span></strong>
-            </div>
-            <div class="credits">
-                <!-- All the links in the footer should remain intact. -->
-                <!-- You can delete the links only if you purchased the pro version. -->
-                <!-- Licensing information: https://bootstrapmade.com/license/ -->
-                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/ -->
-                Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+                &copy; @(DateTime.Now.Year) - <strong><span>Miguel Soriano</span></strong>
             </div>
         </div>
     </footer><!-- End  Footer -->

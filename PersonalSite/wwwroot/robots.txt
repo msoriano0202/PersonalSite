@@ -1,0 +1,7 @@
+User-agent: *
+Disallow: /assets/
+Disallow: /css/
+Disallow: /js/
+Disallow: /lib/
+
+Sitemap: https://www.miguelsoriano.com/sitemap.xml
